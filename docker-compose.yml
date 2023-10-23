@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  db:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: teste123
+      POSTGRES_DB: atendimentodb
+      POSTGRES_USER: hesousa
+    ports:
+      - 5432:5432
